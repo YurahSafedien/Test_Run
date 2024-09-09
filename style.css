@@ -1,0 +1,71 @@
+/* CSS RESET */
+body, nav, main, h1, section, p, footer, div, ul,li,h4,h2{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* BURGER ICON + NAVBAR */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    transition: max-height 0.5s ease;
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden;
+    flex-direction: column; /* Horizontal */
+    /* justify-content: flex-start; */
+}
+
+.nav-menu li {
+    padding: 14px 20px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-menu li a:hover {
+    background-color: #575757;
+}
+
+/* Toggle Button Styling */
+.toggle-btn {
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+}
+
+.toggle-btn:hover {
+    background-color: #444;
+}
+
+/* Media Query for larger screens (nav expanded by default) */
+@media (min-width: 600px) {
+    .nav-menu {
+        max-height: none;
+        flex-direction: row;
+        gap: 30px;
+        font-size: 1.2rem;
+    }
+    
+    .toggle-btn {
+        display: none; /* Hide toggle button on larger screens */
+    }
+}
+
+/* Other? */
+
+
+
+
